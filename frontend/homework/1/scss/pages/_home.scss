@@ -1,0 +1,90 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts" as *;
+
+.why__cards {
+  max-width: 1100px;
+  margin: 0 auto;
+  @include grid(4, 24px);
+}
+
+@include respond(tablet) {
+  .why__cards {
+    @include grid(2, 24px);
+  }
+}
+
+@include respond(mobile) {
+  .why__cards {
+    @include grid(1, 24px);
+  }
+}
+
+
+.contact {
+  padding: 60px 24px;
+  background: $bg-white;
+  text-align: center;
+}
+
+.contact__title {
+  width: 100%;
+  margin: 0;
+  font-size: 34px;
+  font-weight: 800;
+  color: $text-dark;
+
+  span {
+    color: $primary;
+  }
+}
+
+.contact__subtitle {
+  margin: 10px 0 32px;
+  color: $text-light;
+  font-size: 14px;
+}
+
+.contact__grid {
+  max-width: 1050px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 24px;
+  align-items: start;
+  text-align: left;
+}
+
+.contact__info {
+  padding: 18px;
+}
+
+.contact__info h3 {
+  margin: 0 0 10px;
+  color: $text-dark;
+}
+
+.contact__info p {
+  color: $text-light;
+  line-height: $line-height-normal;
+}
+
+.contact__row {
+  margin-top: 12px;
+  color: $text-light;
+
+  b {
+    color: $text-dark;
+  }
+}
+
+.contact__info h4 {
+  margin-top: 24px;
+  margin-bottom: 8px;
+  color: $text-dark;
+}
+
+.contact__social {
+  margin: 0;
+  padding-left: 18px;
+  color: $text-light;
+}

@@ -1,0 +1,35 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts" as *;
+
+:root {
+  --color-primary: #{$primary};
+  --color-secondary: #{$secondary};
+}
+
+header {
+  @include flex-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: var(--color-primary);
+  padding: 8px;
+}
+body {
+  overflow-x: hidden;
+    font-size: $font-family-base;
+    max-width: 100%;
+    margin:0;
+}
+
+html {
+  overflow: visible;
+  max-width: 100%;
+  margin:0;
+}
+
+header p {
+  margin-left: auto;  
+  display: flex;
+  gap: 20px;
+}
