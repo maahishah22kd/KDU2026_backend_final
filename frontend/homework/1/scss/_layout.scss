@@ -1,0 +1,37 @@
+@use "variables" as *;
+
+header {
+    position: sticky;
+  top: 0;
+  z-index: 1000;
+  flex-wrap: nowrap;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: var(--color-primary);
+  padding: 8px;
+
+  h2 {
+    margin: 0;
+    color: white;
+    font-size: 20px;        
+    font-weight: 700;
+    margin-right: auto;     
+
+  }
+
+  span {
+    flex-shrink: 1;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+
+    margin-left: 20px; 
+    cursor: pointer;
+    white-space: nowrap;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
