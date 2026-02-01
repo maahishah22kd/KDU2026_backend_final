@@ -1,0 +1,74 @@
+@use "../abstracts/variables" as v;
+
+.post-input {
+  width: 100%;
+}
+
+.tweet-text {
+  width: 100%;
+  resize: none;
+  border: 1px solid v.$color-border;
+  border-radius: 12px;
+  background: transparent;
+  color: v.$color-text;
+  padding: 10px 12px;
+  outline: none;
+}
+
+.comments {
+  margin-top: 10px;
+}
+
+.comment-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.comment-input {
+  flex: 1;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  color: #fff;
+  outline: none;
+  font-size: 14px;
+}
+
+.comment-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.comment-submit {
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 0;
+  background: #1d9bf0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.comment-submit:hover {
+  background: #1a8cd8;
+}
+
+.post-media {
+  margin-top: 10px;
+}
+
+.post-image,
+.post-video {
+  width: 100%;
+  border-radius: 14px;
+  display: block;
+  height: 300px;
+  width: 100px;
+}
+
+.post-video {
+  max-height: 420px;
+}

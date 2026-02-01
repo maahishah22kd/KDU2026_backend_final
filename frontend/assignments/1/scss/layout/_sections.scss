@@ -1,0 +1,158 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+.left-content {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.right-content {
+  min-height: 100vh;
+}
+
+
+.navigation-section {
+  height: 100%;
+  overflow: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  border-right: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.nav-item img {
+  width: 26px;
+  height: 26px;
+  display: block;
+}
+
+.tweet-box {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+  padding: 14px 12px;
+}
+
+.composer {
+  display: grid;
+  gap: 10px;
+}
+
+.composer-top {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.composer-main {
+  display: grid;
+  grid-template-columns: 52px 1fr;
+  gap: 12px;
+  align-items: start;
+}
+
+.composer-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  background: #d97706;
+  display: grid;
+  place-items: center;
+  margin-top: 4px;
+}
+
+.avatar-letter {
+  font-weight: 800;
+  font-size: 18px;
+  color: #fff;
+}
+
+.tweet-text {
+  width: 100%;
+  resize: none;
+  border: 0;
+  background: transparent;
+  color: #fff;
+  font-size: 22px;
+  line-height: 1.2;
+  outline: none;
+  padding: 6px 0;
+}
+
+.tweet-text::placeholder {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.tweet-tools {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.tweet-tools-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-left: 56px; 
+}
+
+.tool-btn,
+.tweet-tools .tool-btn {
+  background: transparent;
+  border: 0;
+  padding: 6px;
+  border-radius: 999px;
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tool-btn:hover,
+.tweet-tools .tool-btn:hover {
+  background: rgba(29, 155, 240, 0.12);
+}
+
+.tool-btn img,
+.tweet-tools img {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.tweet-btn {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 90px;
+  border: 0;
+  border-radius: 999px;
+  padding: 10px 18px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+}
+
+.composer-tools {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-left: 56px;
+}
+
