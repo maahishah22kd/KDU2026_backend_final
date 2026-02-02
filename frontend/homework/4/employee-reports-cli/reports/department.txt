@@ -1,0 +1,16 @@
+========================
+   DEPARTMENT REPORT     
+========================
+
+Department: Engineering
+Number of Employees: 3
+Total Salary: 296000
+Average Salary: 98666.67
+
+------------------------
+ Employees (Name | Salary)
+------------------------
+Alice Johnson | 85000
+Charlie Brown | 91000
+Frank Miller | 120000
+
