@@ -1,0 +1,9 @@
+@media (max-width:720px){
+  .graph{ height: 320px; }
+  .bar{ width: 26px; }
+  .controls-row{ grid-template-columns: 1fr; }
+}
+
+@media (max-width: 720px){
+  .controls-row{ grid-template-columns: 1fr; }
+}
