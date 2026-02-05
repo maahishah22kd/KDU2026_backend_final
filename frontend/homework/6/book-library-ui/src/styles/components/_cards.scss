@@ -1,0 +1,62 @@
+@use "../abstracts" as *;
+
+.statsCard {
+  @include card;
+  padding: 12px;
+  margin-bottom: 16px;
+}
+
+.statsRow {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  color: $color-text;
+}
+
+.bookCard {
+  border-radius: $radius-md;
+  padding: 12px;
+  background: $color-bg;
+  border: 2px solid $color-border;
+}
+
+.bookCard--available {
+  border-color: $color-available;
+}
+
+.bookCard--unavailable {
+  border-color: $color-unavailable;
+}
+
+.bookCardHeader {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.badge {
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: $radius-pill;
+  border: 1px solid $color-border;
+  white-space: nowrap;
+  color: $color-text;
+  opacity: 0.9;
+}
+
+.meta {
+  margin-top: 8px;
+  color: $color-text;
+
+  p {
+    margin-top: 6px;
+    color: $color-text;
+  }
+}
+
+.desc {
+  margin-top: 10px;
+  color: $color-muted;
+}
