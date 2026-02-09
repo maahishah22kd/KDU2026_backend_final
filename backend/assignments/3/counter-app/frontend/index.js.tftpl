@@ -1,0 +1,17 @@
+const API_BASE_URL = "${api_base_url}";
+
+document.getElementById("api-url").innerText = API_BASE_URL;
+
+async function getCounter() {
+  const res = await fetch(API_BASE_URL + "/counter");
+  const data = await res.json();
+  document.getElementById("counter").innerText = data.value;
+}
+
+async function increment() {
+  const res = await fetch(API_BASE_URL + "/counter", { method: "PUT" });
+  const data = await res.json();
+  document.getElementById("counter").innerText = data.value;
+}
+
+getCounter();
