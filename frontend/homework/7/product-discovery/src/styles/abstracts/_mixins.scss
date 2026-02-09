@@ -1,0 +1,13 @@
+@use "variables" as *;
+
+@mixin container($maxWidth) {
+  width: 100%;
+  max-width: $maxWidth;
+  margin: 0 auto;
+  padding: $space-4;
+}
+
+@mixin focus-ring {
+  outline: 2px solid rgba(109, 91, 208, 0.45);
+  outline-offset: 2px;
+}

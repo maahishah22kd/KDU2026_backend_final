@@ -1,0 +1,17 @@
+@use "../abstracts" as *;
+
+.home {
+  @include container($container-home);
+
+  &__title {
+    margin-bottom: $space-3;
+    font-size: 36px;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: $space-4;
+    margin-top: $space-4;
+  }
+}
