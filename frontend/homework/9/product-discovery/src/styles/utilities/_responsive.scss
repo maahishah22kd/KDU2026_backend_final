@@ -1,0 +1,11 @@
+@use "../abstracts" as *;
+
+@media (max-width: $bp-md) {
+  .product-details__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-details__main-image {
+    height: 240px;
+  }
+}

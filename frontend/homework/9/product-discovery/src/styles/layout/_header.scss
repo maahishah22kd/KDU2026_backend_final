@@ -1,0 +1,93 @@
+@use "../abstracts" as *;
+
+.header {
+  background: linear-gradient(90deg, $color-primary, $color-primary-2);
+  color: #fff;
+  border-bottom: 0;
+  box-shadow: 0 2px 6px rgba(16, 24, 40, 0.05);
+
+  &__inner {
+    padding: 14px 24px;
+
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    column-gap: 24px;
+  }
+
+  &__brand {
+    justify-self: start;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 800;
+    color: #fff;
+    white-space: nowrap;
+  }
+
+  &__nav {
+    justify-self: end;
+  }
+
+  &__link {
+    color: rgba(255,255,255,0.95);
+    text-decoration: none;
+    font-weight: 600;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+    margin-right: 40px;
+  }
+
+  &__link--active {
+    font-weight: 800;
+    border-bottom-color: rgba(255,255,255,0.95);
+  }
+
+  &__search {
+  justify-self: center;
+    width: 100%;
+    max-width: 520px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    background: rgba(255, 255, 255, 0.25);
+    padding: 10px 14px;
+    border-radius: 12px;
+}
+
+&__searchInput {
+  border: none;
+  background: transparent;
+  outline: none;
+  color: #fff;
+
+  width: 100%;
+  font-size: 16px;
+
+  &::placeholder{
+    color: rgba(255, 255, 255, 0.9);
+  }
+}
+
+
+
+&__clear {
+  border: none;
+  background: rgba(255, 255, 255, 0.18);
+  cursor: pointer;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 30px;
+  border-radius: 8px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+}
