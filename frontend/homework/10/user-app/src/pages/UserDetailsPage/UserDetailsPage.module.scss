@@ -1,0 +1,136 @@
+@use "../../styles/variables" as *;
+
+.page {
+  min-height: 100vh;
+  padding: $space-6 $space-4;
+  background: $color-bg;
+
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: $container-details;
+}
+
+.back {
+  display: inline-flex;
+  align-items: center;
+  gap: $space-2;
+  margin-bottom: $space-4;
+  padding: $space-2 $space-3;
+
+  border: 1px solid $color-border;
+  border-radius: $radius-1;
+  background: $color-surface;
+
+  cursor: pointer;
+  font-weight: 700;
+  color: $color-text;
+
+  box-shadow: $shadow-card;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: $shadow-hover;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-primary;
+    outline-offset: 2px;
+  }
+}
+
+.card {
+  background: $color-surface;
+  border: 1px solid $color-border;
+  border-radius: $radius-2;
+  box-shadow: $shadow-card;
+  padding: $space-6;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 800;
+  border: 1px solid $color-border;
+  background: $color-surface;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: $space-6;
+  align-items: start;
+}
+
+.imageBox {
+  width: 100%;
+  border-radius: $radius-2;
+  overflow: hidden;
+  border: 1px solid $color-border;
+  background: $color-bg;
+}
+
+.image {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  display: block;
+}
+
+.title {
+  margin: 0 0 $space-2;
+  font-size: 32px;
+  font-weight: 900;
+  color: $color-text;
+}
+
+.meta {
+  margin-top: $space-3;
+  display: grid;
+  gap: $space-2;
+  font-size: 14px;
+  color: $color-muted;
+
+  span {
+    color: $color-text;
+    font-weight: 700;
+  }
+}
+
+.sectionTitle {
+  margin-top: $space-5;
+  margin-bottom: $space-2;
+  font-size: 14px;
+  font-weight: 900;
+  color: $color-text;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.desc {
+  margin: 0;
+  color: $color-muted;
+  line-height: 1.6;
+}
+
+@media (max-width: $bp-md) {
+  .card {
+    padding: $space-5;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .image {
+    height: 280px;
+  }
+}
