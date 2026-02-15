@@ -1,0 +1,7 @@
+@use "./reset";
+@use "./variables" as *;
+
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: $color-text;
+}

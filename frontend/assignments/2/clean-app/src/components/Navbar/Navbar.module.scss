@@ -1,0 +1,48 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+
+.header{
+  background:$color-white;
+  border-bottom: 0;
+  font-weight: bolder;
+  box-shadow: 0 2px 6px $shadow-md;
+  width:100%;
+  position:sticky;
+  top:0;
+  z-index:1000;
+
+    &__inner {
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+   &__logo{
+    font-size:30px;
+   }
+
+  &__clean{
+    margin-left:$radius-md;
+    color:$color-primary;
+  }
+  &__ly{
+    color: $shadow-md;
+  }
+
+
+  @include mobile{
+    &__inner{
+        padding: $radius-lg $gap;
+    }
+
+    &__clean,
+    &__ly {
+      font-size: 18px;
+    }
+
+    &__number {
+      font-size: 14px;
+    }
+}
+}
+
