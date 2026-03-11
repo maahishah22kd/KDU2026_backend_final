@@ -1,0 +1,17 @@
+@use "../abstracts" as *;
+
+.btn {
+  border: 1px solid $color-border;
+  border-radius: $radius-1;
+  padding: 8px 12px;
+  background: $color-surface;
+  cursor: pointer;
+}
+
+.btn:focus-visible {
+  @include focus-ring;
+}
+
+.btn--ghost {
+  background: transparent;
+}

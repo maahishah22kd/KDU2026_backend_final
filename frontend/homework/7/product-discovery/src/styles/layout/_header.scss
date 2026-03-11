@@ -1,0 +1,43 @@
+@use "../abstracts" as *;
+
+.header {
+  background: linear-gradient(90deg, $color-primary, $color-primary-2);
+  color: #fff;
+  border-bottom: 0;
+  box-shadow: 0 2px 6px rgba(16, 24, 40, 0.05);
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: $space-3;
+    flex-wrap: wrap;
+    padding: $space-3 $space-4;
+    @include container($container-home);
+  }
+
+  &__brand {
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__nav {
+    display: flex;
+    gap: $space-4;
+  }
+
+  &__link {
+    color: rgba(255,255,255,0.95);
+    text-decoration: none;
+    font-weight: 600;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+  }
+
+  &__link--active {
+    font-weight: 800;
+    border-bottom-color: rgba(255,255,255,0.95);
+  }
+}
