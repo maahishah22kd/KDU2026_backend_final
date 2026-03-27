@@ -1,0 +1,24 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+.main-content {
+  min-height: 100vh;
+  display: flex;
+}
+
+.left-content {
+  width: v.$nav-width;
+  flex: 0 0 auto;
+}
+
+.right-content {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+@include m.mobile {
+  .main-content { display: block; }
+  .left-content {display: none; }
+}

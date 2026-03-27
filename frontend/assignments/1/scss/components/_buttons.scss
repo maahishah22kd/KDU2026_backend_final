@@ -1,0 +1,67 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+.tweet-btn {
+  align-self: flex-end;
+  border: 0;
+  border-radius: 999px;
+  padding: 10px 14px;
+  background: v.$color-blue;
+  color: v.$color-text;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.floating-tweet-box-icon {
+  display: none;
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  width: 26px;
+  height: 26px;
+  border-radius: 999px;
+  border: 0;
+  background: v.$color-blue;
+  color: v.$color-text;
+  cursor: pointer;
+}
+
+
+button {
+  font: inherit;
+  color: inherit;
+}
+
+.nav-item,
+.tool-btn,
+.floating-tweet-box-icon,
+.profile-icon,
+.comment-btn,
+.retweet-btn,
+.like-post {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.nav-item,
+.tool-btn,
+.comment-btn,
+.retweet-btn,
+.like-post {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-item {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 999px;
+}
+
+.nav-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+

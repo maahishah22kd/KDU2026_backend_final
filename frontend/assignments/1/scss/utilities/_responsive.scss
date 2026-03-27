@@ -1,0 +1,70 @@
+@use "../abstracts/mixins" as m;
+
+
+@include m.mobile {
+  .navigation-section {
+    display: none;
+  }
+
+  .floating-tweet-box-icon {
+    display: inline-flex;
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+  }
+
+  .tweet-box.is-hidden {
+    display: none;
+  }
+
+  .tweet-box {
+    padding-top: 8px;
+  }
+
+  .tweet-text {
+    font-size: 18px;
+  }
+
+  .composer-tools {
+    padding-left: 56px;
+  }
+}
+
+@include m.mobile {
+  .composer-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 8px 12px;
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    background: #000; 
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+  }
+
+  .composer-back {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 0;
+    padding: 6px;
+    border-radius: 999px;
+  }
+
+  .composer-back img {
+    width: 18px;
+    height: 18px;
+    display: block;
+  }
+
+  .composer-drafts {
+    color: #1d9bf0;
+    font-weight: 700;
+    text-decoration: none;
+  }
+}

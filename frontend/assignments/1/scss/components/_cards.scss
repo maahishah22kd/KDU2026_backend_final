@@ -1,0 +1,93 @@
+.post {
+  padding: 14px 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.post-body {
+  display: grid;
+  gap: 10px;
+}
+
+.post-text {
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+.post-media img,
+.post-media video {
+  width: 100%;
+  max-width: 560px;
+  border-radius: 14px;
+  display: block;
+}
+
+.post-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  justify-content: space-between;
+  max-width: 420px;
+  margin-top: 8px;
+}
+
+.comment-btn,
+.retweet-btn,
+.like-post {
+  border-radius: 999px;
+  padding: 6px 10px;
+}
+
+.comment-btn:hover,
+.retweet-btn:hover,
+.like-post:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.comment-count,
+.retweet-count,
+.likes-count {
+  min-width: 18px;
+  text-align: left;
+}
+
+.action-icon {
+  width: 18px;
+  height: 18px;
+  display: block;
+  opacity: 0.7;
+}
+
+.post-actions button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+}
+
+.post-actions button:hover {
+  color: #1d9bf0;
+}
+
+.like-post.unlike-post {
+  color: #f91880;
+}
+
+.like-post.unlike-post .action-icon {
+  filter: brightness(1.2);
+}
+
+
+.comment-list {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.comment {
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  font-size: 14px;
+}
