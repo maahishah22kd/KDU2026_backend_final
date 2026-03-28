@@ -1,0 +1,82 @@
+.register{
+    background-color: rgb(239, 245, 245);
+    min-height: 100vh;
+    border-radius: 20px;
+    width: 1000px;
+    margin-top:30px;    
+    border: 2px solid #4f5052;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    &__fields{
+        margin-top:20px;
+        padding:10px;
+        color:rgb(71, 69, 69);
+        font-size: 40px;
+    }
+
+    &__mssg input{
+    margin-left: 20px;
+    margin-right:20px;
+    height: 60px;
+    width:70%;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    background: white;
+    color: #4a5568;
+    padding: 12px;
+    font-size: 20px;  
+    }
+
+    select{
+        margin-left: 20px;
+    margin-right:20px;
+    height: 60px;
+    width:70%;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    background: white;
+    color: #4a5568;
+    padding: 12px;
+    font-size: 20px;  
+    }
+
+    textarea{
+    margin-left: 20px;
+    margin-right:20px;
+    height: 60px;
+    width:70%;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    background: white;
+    color: #4a5568;
+    padding: 12px;
+    font-size: 20px;  
+    }
+
+    &__submit button{
+    margin-left: 20px;
+    margin-right:20px;
+    height: 60px;
+    width:70%;
+    border: 2px solid #01451d;
+    border-radius: 8px;
+    background: rgb(47, 211, 104);
+    color: #01451d;
+    padding: 12px;
+    font-size: 20px;  
+    }
+
+    &__heading{
+    margin-top:30px;    
+    margin-right:20px;
+    height: 60px;
+    width:70%;
+    margin-left:150px;
+    border: 2px solid #0922a1;
+    border-radius: 8px;
+    background: rgb(41, 145, 243);
+    color: #0922a1;
+    padding: 12px;
+    font-size: 20px;  
+    }
+}
