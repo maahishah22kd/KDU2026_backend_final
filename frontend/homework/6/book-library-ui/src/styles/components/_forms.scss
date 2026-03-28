@@ -1,0 +1,25 @@
+@use "../abstracts" as *;
+
+.filtersBar {
+  display: grid;
+  grid-template-columns: 1fr 200px 220px;
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.input,
+.select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+  font-size: $font-size-base;
+}
+
+.label {
+  @include label;
+}
+
+.range {
+  width: 100%;
+}

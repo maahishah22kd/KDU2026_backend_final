@@ -1,0 +1,20 @@
+@use "./variables" as *;
+
+@mixin container {
+  width: min(#{$container-max}, 100%);
+  margin: 0 auto;
+  padding: 16px;
+}
+
+@mixin card {
+  border: 1px solid $color-border;
+  border-radius: $radius-md;
+  background: $color-bg;
+  box-shadow: $shadow-sm;
+}
+
+@mixin label {
+  display: block;
+  font-size: $font-size-sm;
+  margin-bottom: 6px;
+}

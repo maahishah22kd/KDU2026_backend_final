@@ -1,0 +1,9 @@
+@use "../abstracts" as *;
+
+.page {
+  @include container;
+}
+
+.section {
+  margin-top: 16px;
+}
