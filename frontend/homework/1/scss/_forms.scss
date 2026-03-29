@@ -1,0 +1,155 @@
+@use "variables" as *;
+
+
+.contact {
+  padding: 60px 24px;
+  background: $bg-white;
+  text-align: center;
+}
+
+.contact__title {
+  width: 100%;
+  margin: 0;
+  font-size: 34px;
+  font-weight: 800;
+  color: $text-dark;
+
+  span {
+    color: $primary;
+  }
+}
+
+.contact__subtitle {
+  margin: 10px 0 32px;
+  color: $text-light;
+  font-size: 14px;
+}
+
+.contact__grid {
+  max-width: 1050px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 24px;
+  align-items: start;
+  text-align: left;
+}
+
+.contact__info {
+  padding: 18px;
+}
+
+.contact__info h3 {
+  margin: 0 0 10px;
+  color: $text-dark;
+}
+
+.contact__info p {
+  color: $text-light;
+  line-height: $line-height-normal;
+}
+
+.contact__row {
+  margin-top: 12px;
+  color: $text-light;
+
+  b {
+    color: $text-dark;
+  }
+}
+
+.contact__info h4 {
+  margin-top: 24px;
+  margin-bottom: 8px;
+  color: $text-dark;
+}
+
+.contact__social {
+  margin: 0;
+  padding-left: 18px;
+  color: $text-light;
+}
+
+.contact__form {
+  background: $bg-white;
+  border-radius: 12px;
+  padding: 22px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact__form label {
+  font-size: 12px;
+  font-weight: 600;
+  color: $text-dark;
+}
+
+.req {
+  color: #ef4444;
+  font-weight: 700;
+}
+
+.contact__form input,
+.contact__form select,
+.contact__form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  outline: none;
+}
+
+.radio {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+
+  label {
+    font-size: 12px;
+    font-weight: 500;
+    color: $text-light;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+  }
+}
+
+
+
+.contact__btn {
+  margin-top: 8px;
+  padding: 12px 14px;
+  border: none;
+  border-radius: 10px;
+  background: $primary;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .contact {
+    padding: 40px 16px;
+  }
+
+  .contact__btn {
+    width: 100%;
+  }
+}
