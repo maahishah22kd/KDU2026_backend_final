@@ -1,0 +1,10 @@
+========================
+   TOP EARNERS REPORT    
+========================
+
+Rank | Name | Department | Salary
+---------------------------------
+1 | Frank Miller | Engineering | 120000
+2 | Henry Davis | Sales | 95000
+3 | Charlie Brown | Engineering | 91000
+

@@ -1,0 +1,32 @@
+const {writeReport}=require('../src/reportGenerator');
+function generateTopEarnersReport(employees, count, outputPath){
+    const list = Array.isArray(employees) ? employees : [];
+    const sortedEmployees = [...list].sort((a, b) => {
+        return (Number(b.salary) || 0) - (Number(a.salary) || 0);
+    });
+
+    const topEarners = sortedEmployees.slice(0, count);
+    let report = '';
+  report += '========================\n';
+  report += '   TOP EARNERS REPORT    \n';
+  report += '========================\n\n';
+
+  if (topEarners.length === 0) {
+    report += 'No employees available.\n';
+  } else {
+    report += 'Rank | Name | Department | Salary\n';
+    report += '---------------------------------\n';
+
+    topEarners.forEach((emp, index) => {
+      report += `${index + 1} | ${emp.name} | ${emp.department} | ${emp.salary}\n`;
+    });
+  }
+
+  report += '\n';
+
+  writeReport(outputPath, report);
+}
+
+module.exports = {
+  generateTopEarnersReport
+};
