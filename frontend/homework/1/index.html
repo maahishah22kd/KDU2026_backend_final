@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+
+  <body>
+    <header style="background-color: var(--color-primary); color: white; display: flex;" >
+      <h2>
+        TechLearn academy
+    </h2>
+    <p>
+        <span>Home</span>
+        <span>Course</span>
+        <span>Features</span>
+        <span>Testimonials</span>
+        <span>Contact</span>
+    </p>
+    </header>
+
+    <div style="display: flex;" class="hero">
+        <section class="first">
+        <div class="content">
+            <h1>
+                Learn Web<br />
+      Development<br />
+      from Scratch
+            </h1>
+
+            <p class="subtitle">
+      Master HTML, CSS, and modern web technologies<br />
+      with our comprehensive courses
+    </p>
+
+    <div class="buttons">
+        <button id="btn-1">Get started</button>
+        <button id="btn-2">Learn More</button>
+    </div>
+        </div>
+    </section>
+
+    <section class="img">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600&fit=crop">
+    </section>
+    </div>
+
+
+    <section class="why">
+  <h2 class="why_title">
+    Why Choose <span>TechLearn</span>
+  </h2>
+  <p class="why_subtitle">
+    Discover the benefits of learning with us
+  </p>
+
+  <div class="why__cards">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=300&fit=c
+rop" />
+      <h3>Expert Instructors</h3>
+      <p>
+        Learn from <strong>industry professionals</strong> with years of experience
+        in web development and design.
+      </p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&h=300&fit=c
+rop" />
+      <h3>Flexible Learning</h3>
+      <p>
+        Study at your own pace with <em>lifetime access</em> to course materials
+        and resources.
+      </p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=400&h=300&fit=c
+rop" />
+      <h3>Community Support</h3>
+      <p>
+        Join a vibrant community of learners and get help whenever you need it.
+      </p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&h=300&fit=c
+rop" />
+      <h3>Certification</h3>
+      <p>
+        Earn recognized certificates upon completion to boost your career
+        prospects.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<section class="why">
+  <h2 class="course">
+    Popular Courses
+  </h2>
+  <p class="why_subtitle">
+    Choose from our wide range of web development courses
+  </p>
+
+  <div class="course_cards">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1621839673705-6617adf9e890?w=500&h=300&fit=crop" />
+      <h3>HTML & CSS</h3>
+      <p>
+        Learn from <strong>industry professionals</strong> with years of experience
+        in web development and design.
+      </p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1593720213428-28a5b9e94613?w=500&h=300&fit=
+crop" />
+      <h3>Javascript</h3>
+      <p>
+        Study at your own pace with <em>lifetime access</em> to course materials
+        and resources.
+      </p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=500&h=300&fit=c
+rop"/>
+      <h3>React Development</h3>
+      <p>
+        Join a vibrant community of learners and get help whenever you need it.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<section class="contact">
+  <h2 class="contact__title" style="background-color: var(--color-primary); color: white;">Get in Touch</h2>
+  <p class="contact__subtitle">Have questions? We'd love to hear from you!</p>
+
+  <div class="contact__grid">
+    <div class="contact__info">
+      <h3>Contact Information</h3>
+      <p>Fill out the form and our team will get back to you within <b>24 hours</b>.</p>
+
+      <div class="contact__row"><b>Email:</b> abc@gmail.com</div>
+      <div class="contact__row"><b>Phone:</b> 9999999999</div>
+      <div class="contact__row"><b>Address:</b>M.G. Road</div>
+
+      <h4>Follow Us</h4>
+      <ol class="contact__social">
+        <li>Facebook</li>
+        <li>Twitter</li>
+        <li>LinkedIn</li>
+        <li>Instagram</li>
+      </ol>
+    </div>
+
+    <form class="contact__form">
+      <label>Full Name <span class="req">*</span></label>
+      <input type="text" placeholder="xyz" required minlength="2" maxlength="50"/>
+
+      <label>Email Address <span class="req">*</span></label>
+      <input type="email" placeholder="xyz@gmail.com" required />
+
+      <label>Phone Number</label>
+<input inputmode="numeric" type="tel" placeholder="1234567890" pattern="[0-9]{10}" required/>
+      <label>Interested Course <span class="req">*</span></label>
+      <select required>
+        <option value="">Select a course</option>
+        <option>HTML & CSS</option>
+        <option>JavaScript</option>
+        <option>React</option>
+        <option>Backend Basics</option>
+      </select>
+
+      <label>Experience Level <span class="req">*</span></label>
+      <div class="radio">
+        <label><input type="radio" name="level" required /> Beginner</label>
+        <label><input type="radio" name="level" /> Intermediate</label>
+        <label><input type="radio" name="level" /> Advanced</label>
+      </div>
+
+      <label>Message <span class="req">*</span></label>
+      <textarea rows="4" placeholder="Tell us about your learning goals..." required minlength="10" maxlength="500"></textarea>
+
+      
+
+      <button type="submit" class="contact__btn">Send Message</button>
+    </form>
+  </div>
+</section>
+  </body>
+</html>

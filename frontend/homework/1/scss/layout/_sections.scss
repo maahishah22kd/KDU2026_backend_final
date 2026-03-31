@@ -1,0 +1,114 @@
+@use "../abstracts/variables" as *;
+
+
+.first {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 64px 24px;
+  display: grid;
+  align-items: center;
+}
+
+
+.subtitle {
+  margin: 18px 0 0;
+  font-size: $font-size-base;
+  line-height: $line-height-normal;
+  color: $text-light;
+}
+
+.buttons{
+    padding-top: 10px;
+    #btn-1,
+    #btn-2 {
+    padding: 10px 40px;
+    border-radius: 10px;
+    }
+    #btn-1{
+        background-color: $primary;
+        color: $bg-white;
+        border-color: $bg-white;
+    }
+    #btn-2{
+        background-color: $bg-white;
+        color: $primary;
+        border-color: $primary;
+    }
+}
+
+.img img {
+  max-width: 100%;
+  border-radius: 32px;
+  margin-top: 10px;
+  height:500px
+}
+
+
+.why {
+  padding: 80px 24px;
+  text-align: center;
+  background: $bg-white;
+}
+
+.why__title {
+  font-size: 36px;
+  font-weight: 800;
+  color: $text-dark;
+  margin: 0;
+}
+
+.why__subtitle {
+  margin-top: $space-sm;
+  color: $text-light;
+  font-size: $font-family-base
+}
+
+.why__cards {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.course_cards {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns:repeat(3,1fr);
+  gap: 24px;
+}
+
+@media (max-width: 1024px) {
+  .why__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .why__cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .first {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .first {
+    width: 100%;
+    text-align: center;
+  }
+}
+
