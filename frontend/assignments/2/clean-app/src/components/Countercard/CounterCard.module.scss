@@ -1,0 +1,65 @@
+@use "../../styles/variables" as *;
+
+.card {
+  width: 360px;
+  border: 2px solid $color-border;
+  border-radius: $radius-md;
+  background:$color-white;
+  overflow: hidden;
+}
+
+.card__top {
+  padding: 22px $gap $gap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $radius-md;
+}
+
+.card__icon {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  opacity: 0.5;
+}
+
+.card__label {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: $color-muted;
+  font-size: $radius-lg;
+}
+
+.card__controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-top: 2px solid $color-border;
+  height: 44px;
+}
+
+.card__btn {
+  border: 0;
+  background: transparent;
+  font-size: 20px;
+  cursor: pointer;
+  color: $color-muted;
+
+  &:hover {
+    background: #f3f4f6;
+  }
+
+  &:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+}
+
+.card__value {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color:$color-primary;
+  border-left: 2px solid $color-border;
+  border-right: 2px solid $color-border;
+}
